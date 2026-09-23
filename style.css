@@ -133,6 +133,28 @@ h2{
     color: #3F3A37;
 }
 
+.feature-list{
+    width: calc(100% - 48px); /* 画面が狭いときは、左右に24pxずつ（計48px）引いた幅になる */ 
+    max-width: 560px; /* 画面が広いときは、これ以上広がらない */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.feature-card{
+    background-color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+.feature-title, .feature-explain{
+    margin: 0;
+}
+
+.feature-title{
+    margin-bottom: 8px;
+}
+
 .access{
     background-color: #F7F2EA;
     padding: 96px 0;
@@ -165,5 +187,10 @@ footer{
     .jp-section-title {
         text-align: center;
         font-size: 24px;
+    }
+
+    .feature-list{
+        grid-template-columns: 1fr;
+        margin: 0 20px;
     }
 }
