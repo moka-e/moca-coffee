@@ -1,0 +1,169 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: #F7F2EA;
+}
+
+header{
+    height: 72px;
+    background-color: #FFFDF9;
+    padding-left: 32px;
+    padding-right: 32px;
+    display:flex;
+    align-items:center; /* 子要素を上下中央に配置 */
+    justify-content: space-between; /* サイト名とメニューを左右両端に表示 */
+}
+
+h1{
+    margin: 0;
+    color: #3F3A37;
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+}
+
+nav > ul{
+    display: flex; /* 子要素を横並びにする */
+    gap: 24px;     /* 要素同士の余白を指定 */
+    list-style: none; /* ・を消す */
+    padding: 0;
+    margin: 0;
+}
+
+nav a:hover{
+    color: #B99183;
+}
+
+a{
+    color: #3F3A37; /* 文字色指定 */
+    text-decoration: none; /* 下線を消す */
+}
+
+.hero{
+    background-color: #B99183;
+    height: 70vh;
+    display:flex;
+    align-items:center; /* 子要素を上下中央に配置 */
+    justify-content: center; /* 子要素を左右中央に配置 */    
+    flex-flow: column; /* 子要素を縦並び */
+    gap: 16px;
+}
+
+h2{
+    margin: 0; /* デフォルトの余白を削除 */
+    color: #FFFFFF; /* 文字色を指定 */
+    font-size: 20px;
+}
+
+.shopName{
+    color: #FFFFFF;
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+}
+
+.hero-button{
+    color: #3F3A37;
+    background-color: #FFFFFF;
+    padding: 14px 24px;
+    transition: background-color 0.2s; 
+}
+
+.hero-button:hover{
+    background-color: #E8DFDA;
+}
+
+.about{
+    display: flex;
+    flex-flow: column; /* 子要素を縦並び */
+    align-items: center; /* 子要素を左右中央に配置 */   
+    padding: 96px 0;
+    gap: 24px;
+}
+
+.section-title{
+    color: #B99183;
+    font-size: 13px;
+    font-weight: bold; /* 太字 */
+    letter-spacing: 0.1em; /* 文字の間隔を少し広めに設定 */
+}
+
+.jp-section-title{
+    color: #3F3A37;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.explain{
+    padding: 0 24px;
+    margin: 0;
+    text-align: center;
+    color: #3F3A37;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.menu{
+    display: flex;
+    flex-flow: column; /* 子要素を縦並び */
+    align-items: center; /* 子要素を左右中央に配置 */ 
+    gap: 24px;
+    background-color: #FFFDF9;
+    padding: 96px 0;
+}
+
+.menu-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: calc(100% - 48px); /* 画面が狭いときは、左右に24pxずつ（計48px）引いた幅になる */ 
+    max-width: 560px; /* 画面が広いときは、これ以上広がらない */
+}
+
+.item-list{
+    display:flex;
+    justify-content: space-between; /* 商品名と価格を左右両端に表示 */
+    padding: 20px 0;
+    border-bottom: 1px solid #E8DFDA;
+}
+
+.item-name, .item-price{
+    margin: 0;
+    color: #3F3A37;
+}
+
+.access{
+    background-color: #F7F2EA;
+    padding: 96px 0;
+    display: flex;
+    flex-flow: column; /* 子要素を縦並び */
+    align-items: center; /* 子要素を左右中央に配置 */ 
+    gap: 24px;
+}
+
+.address, .hour{
+    margin: 0;
+    color: #3F3A37;
+    font-size: 16px;
+}
+
+.address{
+    font-style: normal;
+}
+
+footer{
+    background-color: #3F3A37;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 28px 0;
+    font-size: 14px;
+}
+
+/* 画面幅が600px以下の場合のみに適用するスタイル */
+@media screen and (max-width: 600px) {
+    .jp-section-title {
+        text-align: center;
+        font-size: 24px;
+    }
+}
